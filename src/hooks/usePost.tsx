@@ -57,6 +57,7 @@ const usePost = () => {
     }
   };
 
+  //add top level comment function
   const addComment = async (postId: string, content: string) => {
     try {
       const post = posts.find((p: any) => p.id === postId);
@@ -72,6 +73,7 @@ const usePost = () => {
         comments: updatedComments,
       });
       setComments(response.data.comments);
+      // Refresh the posts after add new comments
       fetchPosts();
     } catch (error: unknown) {
       if (error instanceof Error) {
@@ -81,6 +83,7 @@ const usePost = () => {
       }
     }
   };
+  //add nested comment function
   const addNestedComment = async (
     postId: string,
     parentCommentId: string | null,

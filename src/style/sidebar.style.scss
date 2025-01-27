@@ -49,14 +49,14 @@
 
     &.active {
       color: $primary_color;
-      background-color: #11057e0d;
+      background-color: #11057e06;
     }
   }
 }
 
 /* Mobile Navbar Styles */
 .navbar-mobile {
-  display: none;
+  display: none; // Hide navbar on larger screens
 
   @media (max-width: 768px) {
     display: flex;
@@ -123,7 +123,7 @@
 
       &.active {
         color: $primary_color;
-        background-color: #11057e0d;
+        background-color: #11057e06;
       }
     }
   }

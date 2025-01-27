@@ -14,14 +14,18 @@
     .nested-comments-right {
       width: 100%;
       font-size: 0.9rem;
-      background-color: #11057e0d;
+      background-color: #11057e06;
       margin: 0.3rem 0rem;
-      padding: 0.5rem;
+
       border-radius: 10px;
       .nested-comments-header {
         display: flex;
         justify-content: space-between;
         color: $primary_color;
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
+      }
+      .nested-comments-text {
+        padding: 0.5rem 0.5rem 0rem 0.5rem;
       }
       .nested-comments-reply-icon {
         color: $gray_color;

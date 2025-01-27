@@ -21,7 +21,7 @@ interface BasicProviderProps {
 }
 
 const BasicProvider: React.FC<BasicProviderProps> = ({ children }) => {
-   const [posts, setPosts] = useState<postType[]>([]);
+  const [posts, setPosts] = useState<postType[]>([]);
   const [comments, setComments] = useState<commentType[]>([]);
   const [nestedComments, setNestedComments] = useState<
     commentType[] | undefined
@@ -38,7 +38,7 @@ const BasicProvider: React.FC<BasicProviderProps> = ({ children }) => {
         isOpenpostModal,
         setIsopenModal,
         posts,
-        setPosts
+        setPosts,
       }}
     >
       {children}

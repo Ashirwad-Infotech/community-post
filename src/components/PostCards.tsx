@@ -1,3 +1,4 @@
+//post individual component
 import React from "react";
 import { postType } from "../types/types";
 import Comments from "./Comments.tsx";

@@ -25,7 +25,9 @@ function App() {
   return (
     <>
       <div className="main">
+        {/* set appbar according to device size */}
         {isMobile ? <MobileMenu /> : <Sidebar />}
+        {/* page redirect using react router */}
         <div className="dashboard">
           <Suspense fallback={<div>Loading...</div>}>
             <Routes>
@@ -34,6 +36,7 @@ function App() {
           </Suspense>
         </div>
       </div>
+      {/* toast container for notification */}
       <ToastContainer />
       {isOpenpostModal && <PostCreationModal />}
     </>

@@ -1,9 +1,13 @@
+//global style for the application
 body {
   margin: 0;
   font-family: "Poppins", serif;
 }
 ::-webkit-scrollbar {
   display: none;
+}
+hr {
+  border: 1px solid #b6b4b43b;
 }
 a {
   text-decoration: none;

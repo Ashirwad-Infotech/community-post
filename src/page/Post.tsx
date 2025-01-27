@@ -15,6 +15,7 @@ const Post = () => {
         <div className="post-main">
           <div className="post-view">
             <div className="post-cards">
+              {/* post cards component rendering using map function */}
               {Array.isArray(posts) && posts.length > 0
                 ? posts.map((post: postType, index: number) => (
                     <Suspense fallback={<div>Loading...</div>}>
@@ -26,6 +27,7 @@ const Post = () => {
           </div>
         </div>
       ) : (
+        // display no post image
         <div className="nopost-image">
           <img src={nopost} alt="post" />
         </div>

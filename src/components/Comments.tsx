@@ -47,16 +47,18 @@ const Comments: React.FC<CommentsProps> = ({ postId }) => {
 
       <div className="comments-section">
         <div className="comments">
+          {/* comments section headers display to username and list of comments count */}
           <div className="post-content">
             <UsernameAvtar username={postId?.username || "Unknown User"} />
             {postId?.content || "No content available"}
           </div>
+          {/* rerender nested comments */}
           <NestedComments
             comments={postId?.comments || []}
             onReply={(commentId: string) => handleReplyClick(commentId)}
           />
         </div>
-        {/* cooments for the selected comments to comments or top-level comments */}
+        {/* cooments for the selected comments to comments or top-level comments input field */}
         <input
           type="text"
           placeholder={

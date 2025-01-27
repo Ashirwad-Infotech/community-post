@@ -27,6 +27,7 @@ const NestedComments: React.FC<NestedCommentsProps> = ({
     });
   };
 
+  // recursive function
   const renderComments = (comments: commentType[], level: number = 0) => {
     return comments.map((comment) => (
       <div className="nested-comments" key={comment.id}>
@@ -46,7 +47,7 @@ const NestedComments: React.FC<NestedCommentsProps> = ({
               </div>
             </div>
             <hr />
-            <div>{comment.content}</div>
+            <div className="nested-comments-text">{comment.content}</div>
           </div>
         </div>
 

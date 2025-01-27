@@ -41,7 +41,9 @@ const PostCreationModal = () => {
     imgurl: "",
   });
 
-  const handleChange = (e:React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setNewPost((prev) => ({
       ...prev,

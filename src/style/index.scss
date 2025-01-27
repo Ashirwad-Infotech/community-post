@@ -1,3 +1,4 @@
+@import "./variables.style.scss";
 //global style for the application
 body {
   margin: 0;
@@ -7,7 +8,7 @@ body {
   display: none;
 }
 hr {
-  border: 1px solid #b6b4b43b;
+  border: 1px solid $border_color;
 }
 a {
   text-decoration: none;

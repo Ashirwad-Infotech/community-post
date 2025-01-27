@@ -17,7 +17,6 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         border: 2px solid #11057e0d;
-        border-radius: 20px;
 
         @media (max-width: 768px) {
           grid-template-columns: repeat(1, 1fr);
@@ -28,11 +27,20 @@
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: 1rem;
+          border-right: 2px solid $border_color;
+
+          .post-card-title {
+            text-align: center;
+            background-color: $white_color;
+            padding: 0.8rem;
+            color: $primary_color;
+            font-size: x-large;
+            border-bottom: 1px solid $border_color;
+            font-weight: 600;
+            text-transform: capitalize;
+          }
           img {
-            height: calc(100vh - 60px);
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
+            height: calc(100vh - 120px);
           }
         }
       }

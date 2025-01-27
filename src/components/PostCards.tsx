@@ -11,6 +11,7 @@ const PostCards: React.FC<PostCardsProps> = ({ post }) => {
     <>
       <div className="post-card-main">
         <div className="post-card">
+          <div className="post-card-title">{post.title}</div>
           <img src={post.imgurl} alt="post" width={"100%"} />
         </div>
         <Comments postId={post} />

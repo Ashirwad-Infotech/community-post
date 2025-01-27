@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  font-family: "Poppins", serif;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  display: flex;
+
+  .dashboard {
+    width: 85%;
+    height: 100vh;
+    overflow: auto;
+    background-color: #11057e0d;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

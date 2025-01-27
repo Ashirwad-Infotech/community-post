@@ -1,0 +1,88 @@
+{
+  "posts": [
+    {
+      "id": "fb41",
+      "title": "food",
+      "content": "\"Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish.\" - Mark Bittman",
+      "username": "test2",
+      "imgurl": "https://i.pinimg.com/736x/07/37/1a/07371a5299ecdc51bbb2dfff5b59ba47.jpg",
+      "comments": [
+        {
+          "id": "1737871623208",
+          "content": "hey",
+          "replies": [
+            {
+              "id": "1737871665533",
+              "content": "what about hey",
+              "replies": [
+                {
+                  "id": "1737873899107",
+                  "content": "this is about hey replies",
+                  "replies": [
+                    {
+                      "id": "1737873926145",
+                      "content": "this is also about hey replies to replies",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "id": "1737876867154",
+                  "content": "what about hey reply to reply",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "1737873123953",
+          "content": "Food is art, and food is love. And we should show love and appreciation for those who cook",
+          "replies": []
+        },
+        {
+          "id": "1737873988148",
+          "content": "Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish.\" - Mark Bittman",
+          "replies": []
+        },
+        {
+          "id": "1737873990733",
+          "content": "Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish.\" - Mark Bittman",
+          "replies": []
+        },
+        {
+          "id": "1737873997934",
+          "content": "Food is art, and food is love. And we should show love and appreciation for those who cook it by eating it with relish.\" - Mark Bittman",
+          "replies": [
+            {
+              "id": "1737951731163",
+              "content": "hii",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "id": "1737957802037",
+          "content": "what is this",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "id": "8da3",
+      "title": "morning thoughts",
+      "content": "Positive good morning quotes are meant to bring you into this happier mental state so you are inspired to live your life fully and work towards your goals. For some reason, wise words put together by famous people can do miracles to our motivation when they pull at the right heartstrings. You can also share your favorite sayings with people around you to uplift their mood and have a positive day together.",
+      "username": "demo",
+      "imgurl": "https://wallpaperaccess.com/full/3222135.jpg",
+      "comments": []
+    },
+    {
+      "id": "bd1e",
+      "title": "flowers",
+      "content": "Tulip cultivation likely began in Persia (Iran) in the 10th century, and it eventually became a symbol of the Ottoman Empire. Tulips were introduced to the Western world by Augier Ghislain de Busbecq, the Viennese ambassador to Turkey, who wrote of seeing the plants in Edirne, Turkey, in 1551 and later sent some seeds to Austria. The arrival at Antwerp in 1562 of a cargo of tulip bulbs from Constantinople (now Istanbul) marked the beginning of the horticultural tulip industry in Europe.",
+      "username": "test",
+      "imgurl": "https://www.thespruce.com/thmb/VfaxWcMdKEW7LHFOrihNsVLZ2zM=/4288x0/filters:no_upscale():max_bytes(150000):strip_icc()/tulips-planting-and-growing-tulips-1402137-08-aee8737736d848ef95f0a340705d9bf9.jpg",
+      "comments": []
+    }
+  ]
+}

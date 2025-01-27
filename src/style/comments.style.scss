@@ -40,14 +40,41 @@
       gap: 0.5rem;
     }
 
-    input {
-      width: 94%;
+    // input textfield and emoji picker style
+    .comment-input-wrapper {
+      display: flex;
+      align-items: center;
+      position: relative;
       border-top: 2px solid #11057e0d;
-      border-bottom: none;
-      border-left: none;
-      border-right: none;
-      padding: 1rem;
-      outline: none;
+
+      input {
+        width: 100%;
+        border: none;
+        padding: 1rem 1rem 1rem 0rem;
+        outline: none;
+      }
+      .emoji-button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 5px;
+        margin-left: 10px;
+        transition: transform 0.2s ease-in-out;
+
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+      .emoji-picker-container {
+        position: absolute;
+        bottom: 60px;
+        left: 0;
+        z-index: 10;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
     }
   }
 }

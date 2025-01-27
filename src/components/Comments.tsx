@@ -4,6 +4,7 @@ import "../style/comments.style.scss";
 import usePost from "../hooks/usePost.tsx";
 import NestedComments from "./NestedComments.tsx";
 import { UsernameAvtar } from "../utils/utils.tsx";
+import EmojiPicker from "emoji-picker-react";
 
 interface CommentsProps {
   postId: postType | undefined;
@@ -14,6 +15,13 @@ const Comments: React.FC<CommentsProps> = ({ postId }) => {
   const { addComment, addNestedComment } = usePost();
   const [comment, setComment] = useState<string>("");
   const [parentCommentId, setParentCommentId] = useState<string | null>(null);
+  const [showEmojiPicker, setShowEmojiPicker] = useState<boolean>(false);
+
+  // Function to handle the selection of an emoji
+  const handleEmojiClick = (emoji: { emoji: string }) => {
+    setComment((prevComment) => prevComment + emoji.emoji); // Append emoji to the comment input
+  };
+
   const handleComments = () => {
     if (comment.trim()) {
       if (parentCommentId) {
@@ -59,22 +67,37 @@ const Comments: React.FC<CommentsProps> = ({ postId }) => {
           />
         </div>
         {/* cooments for the selected comments to comments or top-level comments input field */}
-        <input
-          type="text"
-          placeholder={
-            parentCommentId
-              ? `Replying to comment ID: ${parentCommentId}`
-              : "Type something here..."
-          }
-          name="comment"
-          value={comment}
-          onChange={(e) => setComment(e.target.value)}
-          onKeyDown={(event) => {
-            if (event.key === "Enter") {
-              handleComments();
+        <div className="comment-input-wrapper">
+          <button
+            className="emoji-button"
+            onClick={() => setShowEmojiPicker((prev) => !prev)}
+          >
+            😊
+          </button>
+          <input
+            type="text"
+            placeholder={
+              parentCommentId
+                ? `Replying to comment ID: ${parentCommentId}`
+                : "Type something here..."
             }
-          }}
-        />
+            name="comment"
+            value={comment}
+            onChange={(e) => setComment(e.target.value)}
+            onKeyDown={(event) => {
+              if (event.key === "Enter") {
+                handleComments();
+              }
+            }}
+          />
+
+          {/* Emoji picker */}
+          {showEmojiPicker && (
+            <div className="emoji-picker-container">
+              <EmojiPicker onEmojiClick={handleEmojiClick} />
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

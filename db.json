@@ -1,3 +1,32 @@
 {
-  "posts": []
+  "posts": [
+    {
+      "id": "62a3",
+      "title": "flowers",
+      "content": "Flowers consist of a floral axis upon which are borne the essential organs of reproduction (stamens and pistils) and usually accessory organs (sepals and petals). The number of petals, sepals, stamens and pistils can vary in different plants. A flower includes reproductive parts – the stamen and pistil. Flowers have four main components, namely sepals, petals, carpels, and stamens. ",
+      "username": "test",
+      "imgurl": "https://webneel.com/wallpaper/sites/default/files/images/01-2018/4-beautiful-flower-wallpaper-hd-saxyman.jpg",
+      "comments": [
+        {
+          "id": "1737970028568",
+          "content": "🥳🥳🥳 todays is ggod day",
+          "replies": [
+            {
+              "id": "1737970090066",
+              "content": "this is good about you",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "140a",
+      "title": "flower jasund",
+      "content": "Since early childhood, everyone is attracted to one unique part of the plants. This part of the plant determines its beauty. Not just humans, even animals, and insects are drawn to the flowers of plants. Flowers act as identifiers, and we can instantly name the plant on the basis of its flower. Flowers exist in different shapes and sizes, different colors and in some plants, the flower does not exist at all. Let’s learn more about this interesting part of the plant.",
+      "username": "demo",
+      "imgurl": "https://th.bing.com/th/id/OIP.sWY44wEQgpmU-Q8R87y-LQHaFj?rs=1&pid=ImgDetMain",
+      "comments": []
+    }
+  ]
 }

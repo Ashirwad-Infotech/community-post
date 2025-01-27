@@ -19,7 +19,7 @@ const Sidebar = () => {
             to="/"
             className={({ isActive }) => (isActive ? "active" : "")}
           >
-            <Badge badgeContent={posts?.length} color="primary">
+            <Badge badgeContent={posts?.length || 0} color="primary">
               <LuWalletCards color="action" size={30} />
             </Badge>
             Post

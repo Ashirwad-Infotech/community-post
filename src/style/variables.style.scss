@@ -3,3 +3,19 @@ $white_color: #fff;
 $black_color: #000000;
 $primary_color: #272164;
 $secondary_color: #fc5f36;
+
+// Sidebar Title Common Style
+.sidebar-title {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  color: $primary_color;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
